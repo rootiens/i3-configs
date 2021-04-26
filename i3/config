@@ -13,11 +13,15 @@ exec --no-startup-id hsetroot -center ~/.wallpaper.png
 exec --no-startup-id xsettingsd &
 exec --no-startup-id compton -b
 exec_always sh ~/.fehbg &
-exec "setxkbmap -layout us,ir"
-exec "setxkbmap -option 'grp:alt_shift_toggle'"
+exec_always "setxkbmap -layout us,ir"
+exec_always "setxkbmap -option 'grp:alt_shift_toggle'"
 
 # start a terminal
 bindsym $super+Return exec xfce4-terminal
+
+# Adding Gaps
+gaps inner 5
+gaps outer 5
 
 # start dmenu (a program launcher)
 bindsym $super+Shift+d exec i3-dmenu-desktop --dmenu="dmenu -i -fn 'Noto Sans:size=8'"
