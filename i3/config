@@ -13,6 +13,8 @@ exec --no-startup-id hsetroot -center ~/.wallpaper.png
 exec --no-startup-id xsettingsd &
 exec --no-startup-id compton -b
 exec_always sh ~/.fehbg &
+exec "setxkbmap -layout us,ir"
+exec "setxkbmap -option 'grp:alt_shift_toggle'"
 
 # start a terminal
 bindsym $super+Return exec xfce4-terminal
