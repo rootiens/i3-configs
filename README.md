@@ -11,6 +11,8 @@
   * `rofi`
   * `fonts-noto` `fonts-mplus`
   * `xsettingsd`
+  * `playerctl`
+  * `brightnessctl`
   * `xfce4-terminal`
   * `xfce4-screenshooter`
   
